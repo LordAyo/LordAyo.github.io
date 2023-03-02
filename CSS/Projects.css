@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: #fff;
+}
+
+body{
+  background-color: #000;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  z-index: 9999;
+}
+  
+#preloader-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
+  
+#main-content {
+  display: none;
+}  
+
+h1{
+  color: #fff;
+}
+
+#moonimage{
+  width: 95px;
+  height: 95px;
+}
+
+nav{
+  margin: 40px 96px 0px 96px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.navm{
+  position: relative;
+  margin-left: 28px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.navm::after{
+  content: " ";
+  position: absolute;
+  background-color: #037447;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s ease-in-out;
+}
+
+.navm:hover{
+  color: #fff;
+}
+
+.navm:hover:after{
+  color: #037447;
+  width: 100%;
+}
+
+
+#ptext1{
+  text-align: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 162%;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background: url(/images/back.png);
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+
+@keyframes back{
+  100%{
+    background-position: 2000px 0;
+  }
+}
+
+#ptext2{
+  text-align: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 162%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: -10px;
+}
+
+#projectcards{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 57px;
+}
+
+.pcard{
+  width: 402px;
+  border-radius: 30px; 
+  overflow: hidden;
+  position: relative;
+}
+
+.cardimage{
+  display: block;
+  border-radius: 30px;
+  width: 100%;
+  height: 475px;
+  transition: transform 1.5s;
+}
+
+.layer{
+  width: 322px;
+  height: 0%;
+  background: linear-gradient(rgba(0,0,0,0.6), #037447);
+  border-radius: 30px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 0 40px;
+  transition: height 1s;
+}
+
+.layer h3{
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.layer a i{
+  margin-top: 20px;
+  color: #037447;
+  background: #FFFFFF;
+  font-size: 18px;
+  line-height: 60px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.pcard:hover .cardimage{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.pcard:hover .layer{
+  height: 100%;
+  cursor: pointer;
+}
+
+#ptext3{
+  margin-top: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+  font-size: 15px;
+}

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+body{
+  background-color: #000;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  z-index: 9999;
+}
+  
+#preloader-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
+  
+#main-content {
+  display: none;
+}  
+
+
+h1{
+  color: #fff;
+}
+
+
+nav{
+  margin: 40px 96px 0px 96px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+.navm{
+  position: relative;
+  margin-left: 28px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.navm::after{
+  content: " ";
+  position: absolute;
+  background-color: #037447;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s ease-in-out;
+}
+
+.navm:hover{
+  color: #fff;
+}
+
+.navm:hover:after{
+  color: #037447;
+  width: 100%;
+}
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+}
+
+#ctext1{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 162%;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background: url(/images/back.png);
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+
+@keyframes back{
+  100%{
+    background-position: 2000px 0;
+  }
+}
+
+#ctext2{
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 162%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 50px;
+}
+
+#boldemail{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.callimaged{
+  width: 479px;
+  height: 479px;
+  margin-top: -80px;
+}
+
+.cinput1{
+  border: 1px solid #808080;
+  padding: 30px 0px 29px 25px;
+  width: 500px;
+  height: 81px;
+  margin-bottom: 15px;
+  background-color: #000;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.cinput1:hover{
+  border-color: #037447;
+  cursor: pointer;
+}
+
+.cinput1:hover::placeholder{
+  color: #fff;
+}
+
+#cinput2{
+  border: 1px solid #808080;
+  padding: 30px 0px 100px 25px;
+  width: 500px;
+  height: 200px;
+  background-color: #000;
+  font-weight: 700;
+  border-radius: 10px;
+  resize: none;
+}
+
+
+#cinput2:hover{
+  border-color: #037447;
+  cursor: pointer;
+}
+
+
+#cinput2:hover::placeholder{
+  color: #fff;
+}
+
+textarea::-webkit-scrollbar{
+  width: 0px;
+}
+
+#submitb{
+  border: 2px solid #037447;
+  border-radius: 30px;
+  margin-top: 20px;
+  width: 129px;
+  height: 57px;
+  font-weight: 700;
+  background-color: #000;
+  text-align: center;
+  color: #808080;
+  margin-left: 370px;
+  transition: transform 1.5s;
+  transition-timing-function: ease-in-out;
+}
+
+#submitb:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  background: #037447;
+  color: #fff;
+}
