@@ -306,7 +306,7 @@ textarea::-webkit-scrollbar {
   }
 
   #ctext1 {
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     font-weight: 700;
     color: transparent;
@@ -316,7 +316,7 @@ textarea::-webkit-scrollbar {
     background-clip: text;
     background-position: 0 0;
     animation: back 20s linear infinite;
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
   #ctext1:hover {
