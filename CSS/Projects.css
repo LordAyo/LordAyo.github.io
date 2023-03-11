@@ -97,6 +97,12 @@ nav{
   background-clip: text;
   background-position: 0 0;
   animation: back 20s linear infinite;
+  transition: transform 1.5s;
+  transition-timing-function: ease-in-out;
+}
+
+#ptext1:hover{
+  transform: scale(1.1);
 }
 
 @keyframes back{
@@ -109,7 +115,7 @@ nav{
   text-align: center;
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 20px;
   line-height: 162%;
   text-align: center;
@@ -121,7 +127,7 @@ nav{
   margin-top: 20px;
   display: flex;
   justify-content: center;
-  gap: 57px;
+  gap: 22px;
 }
 
 .pcard{

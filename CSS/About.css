@@ -11,6 +11,7 @@
 
 body{
   background-color: #000;
+  overflow-x: hidden;
 }
 
 #preloader {
@@ -92,6 +93,12 @@ nav{
   background-clip: text;
   background-position: 0 0;
   animation: back 20s linear infinite;
+  transition: transform 1.5s;
+  transition-timing-function: ease-in-out;
+}
+
+#atext1:hover{
+  transform: scale(1.1);
 }
 
 @keyframes back{
@@ -104,7 +111,7 @@ nav{
   text-align: center;
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 20px;
   color: rgba(255, 255, 255, 0.425);
 }

@@ -10,6 +10,16 @@
     <script src="https://kit.fontawesome.com/7778422098.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <script src="/JS/main.js"></script>
+
+  <div id="main-content">
+    <div class="mobile-nav">
+      <a href="/index.html">Home</a>
+      <a href="/HTML/About.html">About</a>
+      <a href="/HTML/Projects.html">Projects</a>
+    </div>
+  </div>
+
   <header>
     <nav>
 
@@ -17,21 +27,24 @@
         <a href="/index.html"><img src="/images/logo.svg" alt="logo"></a>
       </div>
 
-      <div id="navitems">
-        <a class="navm home" href="/index.html">Home</a>
-        <a class="navm" href="/HTML/About.html">About</a>
-        <a class="navm" href="/HTML/Projects.html">Projects</a>
-      </div>
+      <ul id="navitems">
+        <li><a class="navm" href="/index.html">Home</a></li>
+        <li><a class="navm" href="/HTML/About.html">About</a></li>
+        <li><a class="navm" href="/HTML/Projects.html">Projects</a></li>
+      </ul>
+
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>  
     </nav>
   </header>
 
   <section>
     <h1 id="ctext1">&lt;Contact/&gt;</h1>
 
-    <p id="ctext2">Feel free to contact me below or email me at <strong id="boldemail">ayozzabioye@gmail.com</strong></p>
+    <p id="ctext2">Feel free to contact me below or email me at <a href="mailto:ayozzabioye@gmail.com"><strong id="boldemail">ayozzabioye@gmail.com</strong></a></p>
 
     <div class="container">
-
       <div class="callimage">
         <img class="callimaged"src="/images/call.png" alt="">
       </div>
@@ -45,7 +58,6 @@
           <textarea id="cinput2" placeholder="Message" name="Message" maxlength="500" required></textarea>
           <br>
           <button id="submit" type="submit">Send</button>
-          <input type="hidden" name="_autoresponse" value="your custom message">
         </form>
       </div>
   </section>
