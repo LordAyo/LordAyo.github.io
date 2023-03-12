@@ -7,7 +7,7 @@ setTimeout(function() {
       preloader.style.display = "none";
       mainContent.style.display = "block";
     }, 500);
-  }, 10);
+  }, 3000);
 
 window.onload = function () {
     window.addEventListener('scroll', function (e) {
