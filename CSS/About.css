@@ -430,7 +430,8 @@ nav {
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 0px;
-    padding: 0 19px;
+    width: 350px;
+    margin: 0 auto;
   }
   
   #aboutme{
