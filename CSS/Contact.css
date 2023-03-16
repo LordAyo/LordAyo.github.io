@@ -390,19 +390,22 @@ textarea::-webkit-scrollbar {
     width: 0px;
   }
 
+  .wrappersub{
+    text-align: center;
+  }
+
   #submit {
     border: 2px solid #037447;
     border-radius: 30px;
-    margin-top: 20px;
     width: 129px;
     height: 57px;
     font-weight: 700;
     background-color: #000;
     text-align: center;
     color: #808080;
-    margin-left: 220px;
     transition: transform 1.5s;
     transition-timing-function: ease-in-out;
+    margin: 20px 0px 0px 0px;
   }
 
   #submit:hover {
