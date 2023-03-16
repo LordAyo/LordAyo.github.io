@@ -10,6 +10,16 @@
     <script src="https://kit.fontawesome.com/7778422098.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <script src="/JS/main.js"></script>
+
+  <div id="main-content">
+    <div class="mobile-nav">
+      <a href="/index.html">Home</a>
+      <a href="/HTML/About.html">About</a>
+      <a href="/HTML/Contact.html">Contact</a>
+    </div>
+  </div>
+
   <header>
     <nav>
 
@@ -17,11 +27,15 @@
         <a href="/index.html"><img src="/images/logo.svg" alt="logo"></a>
       </div>
 
-      <div id="navitems">
-        <a class="navm home" href="/index.html">Home</a>
-        <a class="navm" href="/HTML/About.html">About</a>
-        <a class="navm" href="/HTML/Contact.html">Contact</a>
-      </div>
+      <ul id="navitems">
+        <li><a class="navm" href="/index.html">Home</a></li>
+        <li><a class="navm" href="/HTML/About.html">About</a></li>
+        <li><a class="navm" href="/HTML/Contact.html">Contact</a></li>
+      </ul>
+
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button> 
     </nav>
   </header>
 
