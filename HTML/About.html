@@ -10,6 +10,15 @@
     <script src="https://kit.fontawesome.com/7778422098.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <script src="/JS/main.js"></script>
+
+  <div id="main-content">
+    <div class="mobile-nav">
+      <a href="/index.html">Home</a>
+      <a href="/HTML/Projects.html">Projects</a>
+      <a href="/HTML/Contact.html">Contacts</a>
+    </div>
+  </div>
   <header>
     <nav>
 
@@ -17,11 +26,16 @@
         <a href="/index.html"><img src="/images/logo.svg" alt="logo"></a>
       </div>
 
-      <div id="navitems">
-        <a class="navm home" href="/index.html">Home</a>
-        <a class="navm" href="/HTML/Projects.html">Projects</a>
-        <a class="navm" href="/HTML/Contact.html">Contact</a>
-      </div>
+      <ul id="navitems">
+        <li><a class="navm" href="/index.html">Home</a></li>
+        <li><a class="navm" href="/HTML/Projects.html">Projects</a></li>
+        <li><a class="navm" href="/HTML/Contact.html">Contacts</a></li>
+      </ul>
+
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>  
+    </nav>
   </header>
 
   <section>
@@ -40,7 +54,9 @@
         <h3 id="atext3">Developer & Designer</h3>
         <p id="atext4">Web developer with a Computer Science background who is fluent in HTML, CSS, and JavaScript. Proven ability to oversee web development projects. Strong teamwork and communication abilities. Seeking an innovative organisation to help me continue my growth and development.</p>
 
-        <a href="/images/Abioyecv.pdf" download="Abioye Ayomide's CV"><button id="abutton1"><i class="fa-solid fa-file-arrow-down"></i> Download CV</button></a>
+        <div class="wrapperb">
+          <a href="/images/Abioyecv.pdf" download="Abioye Ayomide's CV"><button id="abutton1"><i class="fa-solid fa-file-arrow-down"></i> Download CV</button></a>
+        </div>
       </div>
     </div>
   </section>
