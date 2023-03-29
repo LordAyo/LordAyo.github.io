@@ -172,9 +172,9 @@ nav{
 .layer1{
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 120px;
-  margin-left: 80px;
+  justify-content: space-between;
+  gap: 198px;
+  margin-left: 81px;
 }
 
 #text2{
