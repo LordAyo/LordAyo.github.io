@@ -48,7 +48,7 @@
     <div class="layer1">
       <div class="textarea">
         <h1 id="text2">Hi,</h1>
-        <h1 id="text3">I'm Ayomide</h1>
+        <h1 id="text3">I'm <span class="text3"></span></h1>
         <p id="text4">Front end web developer and designer from Nigeria <span>🇳🇬</span></p>
 
         <a id="buttonlink" href="/HTML/Contact.html"><button id="letschat" >Let's Chat</button></a>
@@ -58,6 +58,15 @@
         <img id="faceimage" src="/images/ayomideface.png" alt="">
       </div>
     </div>
-  </section> 
+  </section>
+  <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed(".text3", {
+      strings: ["ayomide", " a Web Dev", "a Designer"],
+      typeSpeed: 150,
+      backSpeed: 100,
+      loop: true
+    })
+  </script>
 </body>
 </html>

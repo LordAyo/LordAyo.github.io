@@ -184,7 +184,15 @@ nav{
 
 #text3{
   font-weight: 700;
-  font-size: 80px;
+  font-size: 70px;
+  margin-top: -40px;
+  color: transparent;
+  -webkit-text-stroke: 2px #037447;
+}
+
+.text3{
+  font-weight: 700;
+  font-size: 70px;
   margin-top: -40px;
   color: transparent;
   -webkit-text-stroke: 2px #037447;
@@ -336,6 +344,15 @@ nav{
   }
 
   #text3{
+    font-weight: 700;
+    font-size: 30px;
+    color: transparent;
+    margin-top: 0px;
+    -webkit-text-stroke: 2px #037447;
+    text-align: center;
+  }
+
+  .text3{
     font-weight: 700;
     font-size: 30px;
     color: transparent;
